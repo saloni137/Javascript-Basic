@@ -1,0 +1,31 @@
+<html>
+
+<head><title>Strings</title></head>
+<body onload="Strings()">
+	<script type="text/javascript">
+		function Strings(){
+			let s = "This is a String";
+
+			let l = s.length;
+			document.getElementById("mystring1").innerHTML = "Length of the string is "+l;
+
+			let s1 = s.toUpperCase();
+			document.getElementById("mystring").innerHTML = s1;
+
+			s = "THIS IS A STRING";
+			let s2 = s.toLowerCase();
+			document.getElementById("mystring3").innerHTML = s2;
+
+			s = "   this is a string       ";
+			let s3 = s.trim();
+			document.getElementById("mystring4").innerHTML = "trimmed string: " +s3;
+
+		}
+	</script>
+	<span id="mystring1"></span><br>
+	<span id="mystring"></span><br>
+	<span id="mystring3"></span><br>
+	<span id="mystring4"></span><br>
+</body>
+
+</html>

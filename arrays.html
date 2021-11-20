@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Pizza </title>
+		<script type="text/javascript">
+			function check(){
+				let fvalue = document.getElementById("fvalue").value;
+				let toppings = ["onion","mashroom","green Pepper","corn","paneer"];
+				let i=0;
+				for(i=0;i<toppings.length;i++){
+					if(toppings[i]==fvalue.toLowerCase()){
+						document.getElementById('s1').innerHTML="Congrats!! Your Favorite topping is available";
+						document.getElementById('s2').innerHTML="";
+					}
+					else{
+						document.getElementById('s2').innerHTML="Sorry!! Your Favorite topping is not available";
+						document.getElementById('s1').innerHTML="";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		Enter Your Favorite Pizza topping<input type="text" id="fvalue" onkeyup="check()">
+		<span id="s1"/>
+		<span id="s2"></span>
+	</body>
+</html>

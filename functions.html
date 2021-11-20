@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Functions</title>
+		<script type="text/javascript">
+			function calculate(){
+				let year = document.getElementById("year").value;
+				let age = 2020-year;
+				document.getElementById("age").innerHTML = "Age is "+age;
+			}
+		</script>
+	</head>
+	<body>
+		Enter your birthyear<input type="text" id="year">
+		<br>
+		<input type="button" value="Calculate age" onclick="calculate()">
+		<br>
+		<span id="age"></span>
+	</body>
+</html>

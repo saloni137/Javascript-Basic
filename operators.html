@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Let's play</title>
+	<script type="text/javascript">
+		function sum(){
+			let s = 15 + 10;
+			document.getElementById("answer").innerHTML="Addition is "+s;
+		}
+		function sub(){
+			let s = 15 - 10;
+			document.getElementById("answer").innerHTML="Subtraction is "+s;
+		}
+		function mul(){
+			let s = 15 * 10;
+			document.getElementById("answer").innerHTML="Multiplication is "+s;
+		}
+		function div(){
+			let s = 15 / 10;
+			document.getElementById("answer").innerHTML="Division is "+s;
+		}
+		function addS(){
+			let s = "Hello " + "javascript"
+			document.getElementById("answer").innerHTML=s
+		}
+	</script>
+</head>
+<body>
+	Click a button to get an answer
+	Two numbers to manipulate are 15 and 10
+	<input type="button" value="+" onclick="sum()" />
+	<input type="button" value="-" onclick="sub()"/>
+	<input type="button" value="*" onclick="mul()"/>
+	<input type="button" value="/" onclick="div()"/>
+	<input type="button" value="Add String" onclick="addS()">
+	<br>
+	<span id="answer"></span>
+</body>
+</html>
